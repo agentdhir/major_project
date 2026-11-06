@@ -1,0 +1,918 @@
+{
+  "attention_mass_on_scans": 0.31681713461875916,
+  "scan_share": 0.17309748178650616,
+  "attention_ratio": 1.8302815924815878,
+  "n_windows": 9475,
+  "feature_importance": {
+    "service": 0.08351780474185944,
+    "detector P(Normal)": 0.06274428218603134,
+    "flag": 0.060309700667858124,
+    "dst_host_same_src_port_rate": 0.049841172993183136,
+    "dst_host_diff_srv_rate": 0.04908590763807297,
+    "dst_host_srv_diff_host_rate": 0.04580826312303543,
+    "logged_in": 0.04201256111264229,
+    "count": 0.03870704025030136,
+    "protocol_type": 0.0382496640086174,
+    "dst_host_same_srv_rate": 0.037721291184425354,
+    "dst_host_count": 0.036200329661369324,
+    "src_bytes": 0.03582489490509033,
+    "dst_bytes": 0.028502095490694046,
+    "dst_host_srv_count": 0.028433488681912422,
+    "detector P(Probe)": 0.02827165275812149,
+    "srv_diff_host_rate": 0.026319997385144234,
+    "diff_srv_rate": 0.025351986289024353,
+    "srv_count": 0.02498031221330166,
+    "dst_host_srv_serror_rate": 0.02345196343958378,
+    "novelty (autoencoder)": 0.022985704243183136,
+    "serror_rate": 0.022749358788132668,
+    "srv_serror_rate": 0.02103002928197384,
+    "rerror_rate": 0.020969100296497345,
+    "srv_rerror_rate": 0.02093825303018093,
+    "same_srv_rate": 0.020483756437897682,
+    "dst_host_rerror_rate": 0.02038915641605854,
+    "dst_host_serror_rate": 0.019200263544917107,
+    "dst_host_srv_rerror_rate": 0.015444272197782993,
+    "duration": 0.011880546808242798,
+    "detector P(DoS)": 0.007860274985432625,
+    "hot": 0.005501130595803261,
+    "wrong_fragment": 0.005251624155789614,
+    "is_guest_login": 0.0034358559641987085,
+    "num_compromised": 0.0028506494127213955,
+    "num_access_files": 0.002446855651214719,
+    "detector P(R2L)": 0.002418396295979619,
+    "num_root": 0.0020728977397084236,
+    "root_shell": 0.0013868040405213833,
+    "num_file_creations": 0.001342086005024612,
+    "num_failed_logins": 0.0010247277095913887,
+    "detector P(U2R)": 0.0008512685308232903,
+    "su_attempted": 0.0008220646413974464,
+    "num_shells": 0.000613996759057045,
+    "land": 0.0003508765366859734,
+    "urgent": 0.0002720337943173945,
+    "is_host_login": 9.357481758343056e-05,
+    "num_outbound_cmds": 0.0
+  },
+  "case_campaigns": [
+    20,
+    60,
+    0,
+    46
+  ],
+  "threshold": 0.22999949753284454,
+  "per_campaign": [
+    {
+      "id": 0,
+      "scenario": "recon_r2l",
+      "warned": true,
+      "lead": 106,
+      "attack_type": "R2L"
+    },
+    {
+      "id": 1,
+      "scenario": "recon_r2l_u2r",
+      "warned": true,
+      "lead": 181,
+      "attack_type": "R2L"
+    },
+    {
+      "id": 2,
+      "scenario": "recon_dos",
+      "warned": true,
+      "lead": 98,
+      "attack_type": "DoS"
+    },
+    {
+      "id": 3,
+      "scenario": "recon_dos",
+      "warned": true,
+      "lead": 96,
+      "attack_type": "DoS"
+    },
+    {
+      "id": 4,
+      "scenario": "recon_dos",
+      "warned": true,
+      "lead": 142,
+      "attack_type": "DoS"
+    },
+    {
+      "id": 7,
+      "scenario": "recon_r2l_u2r",
+      "warned": true,
+      "lead": 162,
+      "attack_type": "R2L"
+    },
+    {
+      "id": 8,
+      "scenario": "recon_dos",
+      "warned": true,
+      "lead": 171,
+      "attack_type": "DoS"
+    },
+    {
+      "id": 10,
+      "scenario": "recon_r2l",
+      "warned": true,
+      "lead": 119,
+      "attack_type": "R2L"
+    },
+    {
+      "id": 11,
+      "scenario": "flash_dos",
+      "warned": false,
+      "lead": 0,
+      "attack_type": "DoS"
+    },
+    {
+      "id": 12,
+      "scenario": "recon_dos",
+      "warned": true,
+      "lead": 154,
+      "attack_type": "DoS"
+    },
+    {
+      "id": 13,
+      "scenario": "recon_dos",
+      "warned": true,
+      "lead": 141,
+      "attack_type": "DoS"
+    },
+    {
+      "id": 16,
+      "scenario": "flash_dos",
+      "warned": false,
+      "lead": 0,
+      "attack_type": "DoS"
+    },
+    {
+      "id": 17,
+      "scenario": "recon_r2l_u2r",
+      "warned": true,
+      "lead": 49,
+      "attack_type": "R2L"
+    },
+    {
+      "id": 19,
+      "scenario": "recon_r2l",
+      "warned": true,
+      "lead": 79,
+      "attack_type": "R2L"
+    },
+    {
+      "id": 20,
+      "scenario": "recon_dos",
+      "warned": true,
+      "lead": 121,
+      "attack_type": "DoS"
+    },
+    {
+      "id": 22,
+      "scenario": "recon_dos",
+      "warned": true,
+      "lead": 108,
+      "attack_type": "DoS"
+    },
+    {
+      "id": 23,
+      "scenario": "flash_dos",
+      "warned": false,
+      "lead": 0,
+      "attack_type": "DoS"
+    },
+    {
+      "id": 25,
+      "scenario": "recon_r2l",
+      "warned": true,
+      "lead": 160,
+      "attack_type": "R2L"
+    },
+    {
+      "id": 26,
+      "scenario": "recon_dos",
+      "warned": true,
+      "lead": 84,
+      "attack_type": "DoS"
+    },
+    {
+      "id": 27,
+      "scenario": "recon_dos",
+      "warned": true,
+      "lead": 57,
+      "attack_type": "DoS"
+    },
+    {
+      "id": 28,
+      "scenario": "recon_r2l",
+      "warned": true,
+      "lead": 47,
+      "attack_type": "R2L"
+    },
+    {
+      "id": 29,
+      "scenario": "recon_dos",
+      "warned": true,
+      "lead": 92,
+      "attack_type": "DoS"
+    },
+    {
+      "id": 31,
+      "scenario": "recon_r2l",
+      "warned": true,
+      "lead": 63,
+      "attack_type": "R2L"
+    },
+    {
+      "id": 32,
+      "scenario": "recon_r2l",
+      "warned": true,
+      "lead": 70,
+      "attack_type": "R2L"
+    },
+    {
+      "id": 33,
+      "scenario": "recon_r2l_u2r",
+      "warned": true,
+      "lead": 124,
+      "attack_type": "R2L"
+    },
+    {
+      "id": 34,
+      "scenario": "recon_dos",
+      "warned": true,
+      "lead": 124,
+      "attack_type": "DoS"
+    },
+    {
+      "id": 37,
+      "scenario": "recon_r2l",
+      "warned": false,
+      "lead": 0,
+      "attack_type": "R2L"
+    },
+    {
+      "id": 38,
+      "scenario": "recon_dos",
+      "warned": true,
+      "lead": 54,
+      "attack_type": "DoS"
+    },
+    {
+      "id": 39,
+      "scenario": "recon_r2l",
+      "warned": true,
+      "lead": 86,
+      "attack_type": "R2L"
+    },
+    {
+      "id": 40,
+      "scenario": "recon_dos",
+      "warned": true,
+      "lead": 126,
+      "attack_type": "DoS"
+    },
+    {
+      "id": 41,
+      "scenario": "recon_dos",
+      "warned": true,
+      "lead": 82,
+      "attack_type": "DoS"
+    },
+    {
+      "id": 42,
+      "scenario": "recon_r2l_u2r",
+      "warned": true,
+      "lead": 84,
+      "attack_type": "R2L"
+    },
+    {
+      "id": 43,
+      "scenario": "recon_r2l",
+      "warned": true,
+      "lead": 117,
+      "attack_type": "R2L"
+    },
+    {
+      "id": 44,
+      "scenario": "recon_r2l",
+      "warned": false,
+      "lead": 0,
+      "attack_type": "R2L"
+    },
+    {
+      "id": 47,
+      "scenario": "recon_dos",
+      "warned": true,
+      "lead": 165,
+      "attack_type": "DoS"
+    },
+    {
+      "id": 48,
+      "scenario": "stealth_r2l",
+      "warned": false,
+      "lead": 0,
+      "attack_type": "R2L"
+    },
+    {
+      "id": 50,
+      "scenario": "flash_dos",
+      "warned": false,
+      "lead": 0,
+      "attack_type": "DoS"
+    },
+    {
+      "id": 51,
+      "scenario": "flash_dos",
+      "warned": true,
+      "lead": 162,
+      "attack_type": "DoS"
+    },
+    {
+      "id": 52,
+      "scenario": "flash_dos",
+      "warned": false,
+      "lead": 0,
+      "attack_type": "DoS"
+    },
+    {
+      "id": 53,
+      "scenario": "recon_r2l_u2r",
+      "warned": true,
+      "lead": 138,
+      "attack_type": "R2L"
+    },
+    {
+      "id": 54,
+      "scenario": "recon_r2l_u2r",
+      "warned": true,
+      "lead": 42,
+      "attack_type": "R2L"
+    },
+    {
+      "id": 55,
+      "scenario": "recon_r2l",
+      "warned": true,
+      "lead": 70,
+      "attack_type": "R2L"
+    },
+    {
+      "id": 57,
+      "scenario": "stealth_r2l",
+      "warned": true,
+      "lead": 42,
+      "attack_type": "R2L"
+    },
+    {
+      "id": 58,
+      "scenario": "recon_r2l",
+      "warned": true,
+      "lead": 39,
+      "attack_type": "R2L"
+    },
+    {
+      "id": 59,
+      "scenario": "recon_r2l_u2r",
+      "warned": true,
+      "lead": 168,
+      "attack_type": "R2L"
+    },
+    {
+      "id": 60,
+      "scenario": "recon_r2l_u2r",
+      "warned": true,
+      "lead": 123,
+      "attack_type": "R2L"
+    },
+    {
+      "id": 61,
+      "scenario": "recon_r2l_u2r",
+      "warned": true,
+      "lead": 95,
+      "attack_type": "R2L"
+    },
+    {
+      "id": 62,
+      "scenario": "recon_r2l_u2r",
+      "warned": true,
+      "lead": 114,
+      "attack_type": "R2L"
+    },
+    {
+      "id": 63,
+      "scenario": "recon_dos",
+      "warned": true,
+      "lead": 65,
+      "attack_type": "DoS"
+    },
+    {
+      "id": 64,
+      "scenario": "recon_r2l",
+      "warned": true,
+      "lead": 162,
+      "attack_type": "R2L"
+    },
+    {
+      "id": 65,
+      "scenario": "recon_dos",
+      "warned": true,
+      "lead": 62,
+      "attack_type": "DoS"
+    },
+    {
+      "id": 67,
+      "scenario": "stealth_r2l",
+      "warned": false,
+      "lead": 0,
+      "attack_type": "R2L"
+    },
+    {
+      "id": 68,
+      "scenario": "recon_r2l",
+      "warned": true,
+      "lead": 119,
+      "attack_type": "R2L"
+    },
+    {
+      "id": 69,
+      "scenario": "recon_r2l",
+      "warned": true,
+      "lead": 163,
+      "attack_type": "R2L"
+    },
+    {
+      "id": 70,
+      "scenario": "recon_r2l",
+      "warned": true,
+      "lead": 75,
+      "attack_type": "R2L"
+    },
+    {
+      "id": 71,
+      "scenario": "stealth_r2l",
+      "warned": false,
+      "lead": 0,
+      "attack_type": "R2L"
+    },
+    {
+      "id": 73,
+      "scenario": "recon_r2l",
+      "warned": true,
+      "lead": 65,
+      "attack_type": "R2L"
+    },
+    {
+      "id": 75,
+      "scenario": "recon_dos",
+      "warned": true,
+      "lead": 97,
+      "attack_type": "DoS"
+    },
+    {
+      "id": 76,
+      "scenario": "recon_r2l_u2r",
+      "warned": true,
+      "lead": 164,
+      "attack_type": "R2L"
+    },
+    {
+      "id": 77,
+      "scenario": "recon_r2l_u2r",
+      "warned": true,
+      "lead": 92,
+      "attack_type": "R2L"
+    },
+    {
+      "id": 80,
+      "scenario": "flash_dos",
+      "warned": false,
+      "lead": 0,
+      "attack_type": "DoS"
+    },
+    {
+      "id": 81,
+      "scenario": "recon_dos",
+      "warned": true,
+      "lead": 141,
+      "attack_type": "DoS"
+    },
+    {
+      "id": 84,
+      "scenario": "recon_dos",
+      "warned": true,
+      "lead": 106,
+      "attack_type": "DoS"
+    },
+    {
+      "id": 85,
+      "scenario": "recon_r2l",
+      "warned": true,
+      "lead": 94,
+      "attack_type": "R2L"
+    },
+    {
+      "id": 86,
+      "scenario": "recon_dos",
+      "warned": true,
+      "lead": 188,
+      "attack_type": "DoS"
+    },
+    {
+      "id": 88,
+      "scenario": "recon_r2l_u2r",
+      "warned": true,
+      "lead": 84,
+      "attack_type": "R2L"
+    },
+    {
+      "id": 89,
+      "scenario": "recon_r2l",
+      "warned": true,
+      "lead": 122,
+      "attack_type": "R2L"
+    },
+    {
+      "id": 90,
+      "scenario": "recon_r2l",
+      "warned": true,
+      "lead": 55,
+      "attack_type": "R2L"
+    },
+    {
+      "id": 93,
+      "scenario": "stealth_r2l",
+      "warned": true,
+      "lead": 129,
+      "attack_type": "R2L"
+    },
+    {
+      "id": 94,
+      "scenario": "recon_r2l_u2r",
+      "warned": true,
+      "lead": 184,
+      "attack_type": "R2L"
+    },
+    {
+      "id": 95,
+      "scenario": "flash_dos",
+      "warned": false,
+      "lead": 0,
+      "attack_type": "DoS"
+    },
+    {
+      "id": 96,
+      "scenario": "stealth_r2l",
+      "warned": false,
+      "lead": 0,
+      "attack_type": "R2L"
+    },
+    {
+      "id": 97,
+      "scenario": "recon_r2l_u2r",
+      "warned": true,
+      "lead": 145,
+      "attack_type": "R2L"
+    },
+    {
+      "id": 98,
+      "scenario": "flash_dos",
+      "warned": true,
+      "lead": 130,
+      "attack_type": "DoS"
+    },
+    {
+      "id": 99,
+      "scenario": "recon_r2l_u2r",
+      "warned": true,
+      "lead": 123,
+      "attack_type": "R2L"
+    },
+    {
+      "id": 100,
+      "scenario": "recon_r2l_u2r",
+      "warned": true,
+      "lead": 132,
+      "attack_type": "R2L"
+    },
+    {
+      "id": 101,
+      "scenario": "recon_r2l_u2r",
+      "warned": true,
+      "lead": 154,
+      "attack_type": "R2L"
+    },
+    {
+      "id": 103,
+      "scenario": "recon_dos",
+      "warned": true,
+      "lead": 142,
+      "attack_type": "DoS"
+    },
+    {
+      "id": 104,
+      "scenario": "recon_dos",
+      "warned": true,
+      "lead": 135,
+      "attack_type": "DoS"
+    },
+    {
+      "id": 105,
+      "scenario": "recon_r2l_u2r",
+      "warned": true,
+      "lead": 169,
+      "attack_type": "R2L"
+    },
+    {
+      "id": 108,
+      "scenario": "recon_dos",
+      "warned": true,
+      "lead": 198,
+      "attack_type": "DoS"
+    },
+    {
+      "id": 109,
+      "scenario": "recon_dos",
+      "warned": true,
+      "lead": 84,
+      "attack_type": "DoS"
+    },
+    {
+      "id": 110,
+      "scenario": "recon_r2l",
+      "warned": true,
+      "lead": 45,
+      "attack_type": "R2L"
+    },
+    {
+      "id": 111,
+      "scenario": "recon_dos",
+      "warned": true,
+      "lead": 99,
+      "attack_type": "DoS"
+    },
+    {
+      "id": 112,
+      "scenario": "recon_r2l_u2r",
+      "warned": true,
+      "lead": 72,
+      "attack_type": "R2L"
+    },
+    {
+      "id": 113,
+      "scenario": "recon_r2l",
+      "warned": true,
+      "lead": 188,
+      "attack_type": "R2L"
+    },
+    {
+      "id": 114,
+      "scenario": "recon_dos",
+      "warned": true,
+      "lead": 63,
+      "attack_type": "DoS"
+    },
+    {
+      "id": 116,
+      "scenario": "recon_r2l_u2r",
+      "warned": true,
+      "lead": 81,
+      "attack_type": "R2L"
+    },
+    {
+      "id": 117,
+      "scenario": "recon_r2l",
+      "warned": true,
+      "lead": 107,
+      "attack_type": "R2L"
+    },
+    {
+      "id": 118,
+      "scenario": "recon_r2l",
+      "warned": true,
+      "lead": 93,
+      "attack_type": "R2L"
+    },
+    {
+      "id": 119,
+      "scenario": "recon_r2l_u2r",
+      "warned": true,
+      "lead": 64,
+      "attack_type": "R2L"
+    },
+    {
+      "id": 121,
+      "scenario": "recon_r2l",
+      "warned": true,
+      "lead": 82,
+      "attack_type": "R2L"
+    },
+    {
+      "id": 122,
+      "scenario": "recon_dos",
+      "warned": true,
+      "lead": 175,
+      "attack_type": "DoS"
+    },
+    {
+      "id": 124,
+      "scenario": "recon_dos",
+      "warned": true,
+      "lead": 123,
+      "attack_type": "DoS"
+    },
+    {
+      "id": 126,
+      "scenario": "recon_r2l_u2r",
+      "warned": true,
+      "lead": 122,
+      "attack_type": "R2L"
+    },
+    {
+      "id": 127,
+      "scenario": "recon_dos",
+      "warned": true,
+      "lead": 65,
+      "attack_type": "DoS"
+    },
+    {
+      "id": 128,
+      "scenario": "recon_dos",
+      "warned": true,
+      "lead": 128,
+      "attack_type": "DoS"
+    },
+    {
+      "id": 129,
+      "scenario": "recon_r2l",
+      "warned": true,
+      "lead": 80,
+      "attack_type": "R2L"
+    },
+    {
+      "id": 130,
+      "scenario": "recon_r2l_u2r",
+      "warned": true,
+      "lead": 79,
+      "attack_type": "R2L"
+    },
+    {
+      "id": 131,
+      "scenario": "recon_r2l_u2r",
+      "warned": true,
+      "lead": 173,
+      "attack_type": "R2L"
+    },
+    {
+      "id": 132,
+      "scenario": "recon_r2l",
+      "warned": true,
+      "lead": 139,
+      "attack_type": "R2L"
+    },
+    {
+      "id": 134,
+      "scenario": "recon_dos",
+      "warned": true,
+      "lead": 148,
+      "attack_type": "DoS"
+    },
+    {
+      "id": 135,
+      "scenario": "recon_r2l",
+      "warned": true,
+      "lead": 137,
+      "attack_type": "R2L"
+    },
+    {
+      "id": 136,
+      "scenario": "recon_dos",
+      "warned": true,
+      "lead": 41,
+      "attack_type": "DoS"
+    },
+    {
+      "id": 137,
+      "scenario": "recon_r2l",
+      "warned": true,
+      "lead": 123,
+      "attack_type": "R2L"
+    },
+    {
+      "id": 138,
+      "scenario": "recon_r2l",
+      "warned": true,
+      "lead": 54,
+      "attack_type": "R2L"
+    },
+    {
+      "id": 139,
+      "scenario": "recon_r2l",
+      "warned": true,
+      "lead": 184,
+      "attack_type": "R2L"
+    },
+    {
+      "id": 140,
+      "scenario": "recon_dos",
+      "warned": true,
+      "lead": 75,
+      "attack_type": "DoS"
+    },
+    {
+      "id": 141,
+      "scenario": "recon_r2l",
+      "warned": true,
+      "lead": 142,
+      "attack_type": "R2L"
+    },
+    {
+      "id": 143,
+      "scenario": "recon_r2l_u2r",
+      "warned": true,
+      "lead": 144,
+      "attack_type": "R2L"
+    },
+    {
+      "id": 145,
+      "scenario": "recon_r2l_u2r",
+      "warned": true,
+      "lead": 86,
+      "attack_type": "R2L"
+    },
+    {
+      "id": 146,
+      "scenario": "recon_dos",
+      "warned": true,
+      "lead": 138,
+      "attack_type": "DoS"
+    },
+    {
+      "id": 148,
+      "scenario": "flash_dos",
+      "warned": false,
+      "lead": 0,
+      "attack_type": "DoS"
+    },
+    {
+      "id": 150,
+      "scenario": "recon_r2l_u2r",
+      "warned": true,
+      "lead": 29,
+      "attack_type": "R2L"
+    },
+    {
+      "id": 151,
+      "scenario": "stealth_r2l",
+      "warned": true,
+      "lead": 54,
+      "attack_type": "R2L"
+    },
+    {
+      "id": 152,
+      "scenario": "recon_r2l",
+      "warned": true,
+      "lead": 118,
+      "attack_type": "R2L"
+    },
+    {
+      "id": 154,
+      "scenario": "recon_dos",
+      "warned": true,
+      "lead": 156,
+      "attack_type": "DoS"
+    },
+    {
+      "id": 155,
+      "scenario": "recon_dos",
+      "warned": true,
+      "lead": 131,
+      "attack_type": "DoS"
+    },
+    {
+      "id": 156,
+      "scenario": "recon_r2l_u2r",
+      "warned": true,
+      "lead": 164,
+      "attack_type": "R2L"
+    },
+    {
+      "id": 157,
+      "scenario": "recon_dos",
+      "warned": true,
+      "lead": 168,
+      "attack_type": "DoS"
+    },
+    {
+      "id": 158,
+      "scenario": "recon_dos",
+      "warned": true,
+      "lead": 85,
+      "attack_type": "DoS"
+    },
+    {
+      "id": 159,
+      "scenario": "recon_dos",
+      "warned": true,
+      "lead": 92,
+      "attack_type": "DoS"
+    }
+  ]
+}

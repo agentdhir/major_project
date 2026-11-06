@@ -1,0 +1,12 @@
+{
+  "best_model": "Logistic Regression",
+  "metrics": {
+    "Model": "Logistic Regression",
+    "Accuracy": 0.7634403832505323,
+    "Precision": 0.7203189918243055,
+    "Recall": 0.5692458761874286,
+    "F1": 0.588390502730616,
+    "Train(s)": 8.735037565231323,
+    "Test(s)": 0.006247043609619141
+  }
+}

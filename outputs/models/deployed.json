@@ -1,0 +1,9 @@
+{
+  "tag": "foresight_s0",
+  "seed": 0,
+  "val_pr_auc": 0.7029419791239216,
+  "thr_val": 0.5092533230781555,
+  "thr_site": 0.9906846880912781,
+  "thr_adapted": 0.22999949753284454,
+  "site_adapted": true
+}

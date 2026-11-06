@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+outputs_quick/
+outputs/cache/
+outputs/models/runs/
+outputs/*_log.txt
+presentation/node_modules/
+presentation/render/
+.streamlit/
+
+# Not published: personal forms, third-party papers, unrelated old project
+Form for Details of Applicants and Inventors.docx
+*.pdf
+paper1.txt
+paper2.txt
+2025 Minor Project different.pptx

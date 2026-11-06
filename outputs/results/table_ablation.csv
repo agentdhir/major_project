@@ -1,0 +1,6 @@
+Method,ROC-AUC,PR-AUC,F1,Early-warning rate %,Warned ≥10 conns early %,Median lead (conns),False alarms /10k,Alert precision %,Decoys alarmed %,No-precursor attacks warned %
+FORESIGHT-Net (full),0.858 ± 0.002,0.653 ± 0.008,0.643 ± 0.006,98.7 ± 0.4,98.4 ± 0.4,119.8 ± 2.1,19.6 ± 1.9,56.5 ± 3.5,86.0 ± 2.5,39.2 ± 7.3
+FORESIGHT-Net w/o attention,0.859 ± 0.002,0.662 ± 0.014,0.643 ± 0.004,98.1 ± 0.0,98.1 ± 0.0,119.7 ± 1.7,22.4 ± 4.1,51.7 ± 4.7,86.0 ± 2.5,31.4 ± 2.8
+FORESIGHT-Net w/o causal CNN,0.860 ± 0.005,0.652 ± 0.007,0.641 ± 0.008,98.7 ± 0.4,98.4 ± 0.4,117.0 ± 2.7,28.9 ± 8.0,45.1 ± 5.0,86.0 ± 5.4,41.2 ± 9.6
+FORESIGHT-Net w/o multi-task,0.860 ± 0.009,0.635 ± 0.016,0.632 ± 0.005,99.0 ± 0.8,98.7 ± 1.2,117.8 ± 1.6,21.7 ± 5.9,53.4 ± 5.8,90.4 ± 6.9,41.2 ± 4.8
+FORESIGHT-Net w/o detector evidence (pure DL),0.852 ± 0.014,0.652 ± 0.008,0.642 ± 0.003,98.1 ± 0.8,98.1 ± 0.8,123.2 ± 3.0,33.3 ± 2.7,43.5 ± 2.6,82.5 ± 3.3,39.2 ± 7.3

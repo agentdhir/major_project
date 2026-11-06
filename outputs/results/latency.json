@@ -1,0 +1,11 @@
+{
+  "cuda": {
+    "ms_per_window_batch1": 2.29495150008006,
+    "windows_per_second_batched": 50566.74632093956
+  },
+  "cpu": {
+    "ms_per_window_batch1": 2.6569390000076964,
+    "windows_per_second_batched": 5289.9621869172715
+  },
+  "params": 349653
+}

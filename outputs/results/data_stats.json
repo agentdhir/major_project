@@ -1,0 +1,180 @@
+{
+  "pools": {
+    "train": {
+      "records": 107077,
+      "Normal": 57241,
+      "DoS": 39038,
+      "Probe": 9908,
+      "R2L": 846,
+      "U2R": 44
+    },
+    "val": {
+      "records": 18896,
+      "Normal": 10102,
+      "DoS": 6889,
+      "Probe": 1748,
+      "R2L": 149,
+      "U2R": 8
+    },
+    "adapt": {
+      "records": 2014,
+      "Normal": 1941,
+      "Probe": 73
+    },
+    "site": {
+      "records": 2015,
+      "Normal": 1943,
+      "Probe": 72
+    },
+    "test": {
+      "records": 18515,
+      "DoS": 7460,
+      "Normal": 5827,
+      "R2L": 2885,
+      "Probe": 2276,
+      "U2R": 67
+    }
+  },
+  "streams": {
+    "train": {
+      "connections": 231237,
+      "campaigns": 400,
+      "scenarios": {
+        "recon_dos": 115,
+        "decoy_scan": 98,
+        "recon_r2l": 76,
+        "recon_r2l_u2r": 61,
+        "stealth_r2l": 34,
+        "flash_dos": 16
+      },
+      "phase_share": {
+        "background": 0.7656516906896388,
+        "recon": 0.12943430333380904,
+        "attack": 0.06346735167814839,
+        "decoy": 0.021947179733347172,
+        "lull": 0.01949947456505663
+      },
+      "category_share": {
+        "Normal": 0.9155282242893654,
+        "DoS": 0.0369274813286801,
+        "Probe": 0.03508089103387434,
+        "R2L": 0.010941155610910018,
+        "U2R": 0.0015222477371700895
+      },
+      "unique_records": 73664
+    },
+    "val": {
+      "connections": 53154,
+      "campaigns": 90,
+      "scenarios": {
+        "decoy_scan": 25,
+        "recon_dos": 22,
+        "recon_r2l_u2r": 16,
+        "recon_r2l": 15,
+        "flash_dos": 7,
+        "stealth_r2l": 5
+      },
+      "phase_share": {
+        "background": 0.7715129623358543,
+        "recon": 0.12580426684727397,
+        "attack": 0.06037175000940663,
+        "decoy": 0.024908755691011024,
+        "lull": 0.017402265116454076
+      },
+      "category_share": {
+        "Normal": 0.9183316401399707,
+        "DoS": 0.03433419874327426,
+        "Probe": 0.03521842194378598,
+        "R2L": 0.010347292771945668,
+        "U2R": 0.0017684464010234414
+      },
+      "unique_records": 13283
+    },
+    "test": {
+      "connections": 92047,
+      "campaigns": 160,
+      "scenarios": {
+        "recon_dos": 41,
+        "decoy_scan": 38,
+        "recon_r2l": 34,
+        "recon_r2l_u2r": 30,
+        "flash_dos": 10,
+        "stealth_r2l": 7
+      },
+      "phase_share": {
+        "background": 0.7486610101361261,
+        "recon": 0.14495855378230688,
+        "attack": 0.06456484187425988,
+        "decoy": 0.02130433365563245,
+        "lull": 0.02051126055167469
+      },
+      "category_share": {
+        "Normal": 0.9093289297858702,
+        "DoS": 0.037024563538192445,
+        "Probe": 0.03993611959107847,
+        "R2L": 0.011917824589611829,
+        "U2R": 0.0017925624952469933
+      },
+      "unique_records": 12011
+    },
+    "adapt": {
+      "connections": 20000,
+      "campaigns": 0,
+      "scenarios": {},
+      "phase_share": {
+        "background": 1.0,
+        "recon": 0.0,
+        "attack": 0.0,
+        "decoy": 0.0,
+        "lull": 0.0
+      },
+      "category_share": {
+        "Normal": 0.9964,
+        "DoS": 0.0,
+        "Probe": 0.0036,
+        "R2L": 0.0,
+        "U2R": 0.0
+      },
+      "unique_records": 2013
+    },
+    "site": {
+      "connections": 20000,
+      "campaigns": 0,
+      "scenarios": {},
+      "phase_share": {
+        "background": 1.0,
+        "recon": 0.0,
+        "attack": 0.0,
+        "decoy": 0.0,
+        "lull": 0.0
+      },
+      "category_share": {
+        "Normal": 0.99585,
+        "DoS": 0.0,
+        "Probe": 0.00415,
+        "R2L": 0.0,
+        "U2R": 0.0
+      },
+      "unique_records": 2015
+    }
+  },
+  "novel_test_labels": [
+    "apache2",
+    "httptunnel",
+    "mailbomb",
+    "mscan",
+    "named",
+    "processtable",
+    "ps",
+    "saint",
+    "sendmail",
+    "snmpgetattack",
+    "snmpguess",
+    "sqlattack",
+    "udpstorm",
+    "worm",
+    "xlock",
+    "xsnoop",
+    "xterm"
+  ]
+}
